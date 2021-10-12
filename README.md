@@ -63,6 +63,12 @@ transaction {
   }
 }
 ```
+
+### 不可能三角与Flow
+ 
+ 扩容性不可能三角是Vitalik Buterin提出的一个[重要推论](https://github.com/ethereum/wiki/wiki/Sharding-FAQ#this-sounds-like-theres-some-kind-of-scalability-trilemma-at-play-what-is-this-trilemma-and-can-we-break-through-it)，它尚未得到正式证明，但几乎可以肯定对于同质化的区块链设计是符合的。如果区块链网络中每一个节点都扮演相同的角色，则必须至少牺牲其中一个维度。 Flow并不“打破”或证伪这个不可能三角推论，而是绕过它。
+ 诀窍就在于，如果我们让不同的节点扮演不同的角色，我们就可以为系统中每个部分选择正确的取舍。. 共识节点最容易遭受拜占庭攻击，福洛最大程度保证其安全性 和 去中心化。当然，这限制了它们的可扩展性，但这实际上并不是问题，因为我们不要求共识节点完成任何计算量大的工作。 另一方面，我们提高了执行节点的 可扩展性 ，以显著提高吞吐量。这影响了这些节点的安全性和去中心化 ，我们通过由高度安全 和去中心化 的验证节点，对交易的每个步骤进行确认，来解决这一问题。 对每一类节点，这个不可能三角推论都是适用的，但是合并后，系统每一部分的弱点都能为其他部分的优势所弥补
+ 
 ### Flow的Dapp开发
 
 Flow的开发工具为@onflow/fcl (flow client Library )
