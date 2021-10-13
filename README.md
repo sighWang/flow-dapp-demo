@@ -152,11 +152,9 @@ fun factorial(_ n: Int): Int {
 
 
 
-### Flow的权益证明
+### 共识机制与经济模型
 
 Flow采用Hotstuff共识算法的变体进行权益证明.
-
-### Flow的经济模型
 
 创建账户,交易,存储都要收费.
 
