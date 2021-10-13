@@ -28,7 +28,6 @@ Flow账户中的存储受StorageCapacity限制.
 
 创建Flow账户是要收费的,约0.001FLOW.
 
-> 提问:创建Flow账户要0.001FLOW,获取0.001FLOW要Flow账户,怎么半?
 
 ### Flow的智能合约与合约开发语言
 
